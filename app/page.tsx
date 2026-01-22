@@ -1,11 +1,11 @@
-import Image from "next/image";
+"use client";
+
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold">Hello World</h1>
-      </main>
+    <div className="flex min-h-screen items-center justify-center">
+      <Button variant="destructive" size={"lg"} className="bg-blue-500 text-white hover:bg-blue-600">Click me</Button>
     </div>
   );
 }
